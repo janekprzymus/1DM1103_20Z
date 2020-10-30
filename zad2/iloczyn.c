@@ -20,16 +20,6 @@ void wczytaj(FILE *fin, float *tablica, int *w1 , int *w2) {
     }
 }
 
-float mnozenie(float *m1, float *m2, int w)
-{
-    float wyn=0;
-    for(int i=0;i<w;i++)
-    {
-        wyn=wyn+(m1[i]*m2[i]);
-    }
-    return wyn;
-}
-
 void wypisz_macierz(float *w, int w1, int w2) {
     int k=0;
     printf("(%dx%d)\n", w1, w2);
